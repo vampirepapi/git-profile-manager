@@ -1,0 +1,11 @@
+# Git Profile Manager Requirements
+# No external dependencies required - uses only Python standard library
+
+# Python 3.6+ required
+# tkinter (usually comes pre-installed with Python)
+# subprocess (standard library)
+# json (standard library)
+# pathlib (standard library)
+
+# Make sure Git is installed and accessible from command line
+# Git can be downloaded from: https://git-scm.com/downloads
