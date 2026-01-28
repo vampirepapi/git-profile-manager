@@ -28,7 +28,7 @@ A simple Python GUI tool to manage and switch between multiple Git user configur
 ### Running the Tool
 
 ```bash
-cd "C:\Users\ShubhamSourabh\sololeveling\git profile manager"
+cd /path/to/git-profile-manager
 python git_profile_manager.py
 ```
 
@@ -44,8 +44,8 @@ Or on Windows, you can simply double-click `git_profile_manager.py`
    - Click "Use Current Config" to auto-fill your current Git settings
    - Or manually enter:
      - Profile Name (e.g., "Work", "Personal")
-     - Git Name (e.g., "shubhamsourabh1")
-     - Git Email (e.g., "shubham.sourabh@mydbsync.com")
+     - Git Name (e.g., "john.doe")
+     - Git Email (e.g., "john.doe@company.com")
    - Click "Add Profile"
 
 3. **Switch Profiles**
@@ -63,22 +63,22 @@ Or on Windows, you can simply double-click `git_profile_manager.py`
 ### Add Work Profile
 ```
 Profile Name: Work
-Git Name: shubhamsourabh1
-Git Email: shubham.sourabh@mydbsync.com
+Git Name: john.doe
+Git Email: john.doe@company.com
 ```
 
 ### Add Personal Profile
 ```
 Profile Name: Personal
-Git Name: vampirepapi
-Git Email: shubhamsourabh8@gmail.com
+Git Name: johndoe
+Git Email: johndoe@example.com
 ```
 
 Now you can switch between them anytime with just one click!
 
 ## Data Storage
 
-Profiles are saved in: `C:\Users\ShubhamSourabh\.git_profile_manager.json`
+Profiles are saved in: `~/.git_profile_manager.json` (or `C:\Users\YourUsername\.git_profile_manager.json` on Windows)
 
 This file stores all your saved profiles and persists between sessions.
 
@@ -93,7 +93,7 @@ This file stores all your saved profiles and persists between sessions.
 - **Local vs Global**:
   - **Local**: Applies Git config to the current working directory's Git repository
     - You must run the tool from within a Git repository folder (or navigate there first in your terminal)
-    - Example: `cd C:\Users\ShubhamSourabh\work\BitBucket\dbsync-cloud-wf` then run the tool
+    - Example: `cd /path/to/your/git/project` then run the tool
     - The tool finds the `.git` folder in your current directory and updates that specific repository's config
     - If you run the tool from a non-Git folder and click "Apply Local", it will fail
   - **Global**: Applies Git config system-wide (updates `~/.gitconfig`)
